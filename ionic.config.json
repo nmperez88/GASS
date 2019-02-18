@@ -1,6 +1,8 @@
 {
   "name": "GASS",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular",
   "id": "57c77ab8"
 }

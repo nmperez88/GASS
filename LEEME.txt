@@ -1,0 +1,27 @@
+Geolocalización:
+    Comandos:
+        ionic cordova plugin ls
+        ionic cordova plugin add cordova-plugin-geolocation --variable GEOLOCATION_USAGE_DESCRIPTION="To locate you"
+        npm install --save @ionic-native/geolocation
+        npm install jquery
+        npm install @types/jquery
+
+    Archivos:
+        src\app\app.module.ts
+            Agregar:
+                Imports:
+                    import { Geolocation } from '@ionic-native/Geolocation/ngx';
+                @NgModule=>providers:
+                    Geolocation,
+
+    Para trabajar con mapas es posible utilizar el SDK nativo para Android e IOS pero en este caso utilizaremos la de javascript
+    Es necesario tener la API_KEY de google maps
+
+                src\index.html
+                    En el header:
+                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmiIbf_0HqWtwP3xB2Hf3Jj4uVp_4hDSg"></script>
+
+
+ionic serve -l
+
+A programar!
