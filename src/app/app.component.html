@@ -3,22 +3,23 @@
     <ion-menu>
       <ion-header>
         <ion-toolbar color="primary">
-            <ion-avatar slot="start" class="arround_avatar">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAAAAAAALAAAAAABAAEAAAICTAEAOw==">
-            </ion-avatar>
-            <ion-label class="format_text_username">
-              Avatar Start, Button Item
-            </ion-label>
-            <ion-label class="format_text_rol">
-              Cliente,
-            </ion-label>
-          <ion-label class="format_text_score">
-            4.8
-          </ion-label>
+          <ion-avatar slot="start" class="arround_avatar">
+            <img src="../assets/imgs/userPicture.svg">
+          </ion-avatar>
+          <ion-item>
+            <ion-list>
+              <ion-label class="format_text_username" color="light">Item Avatar</ion-label>
+              <ion-label class="format_text_rol" color="light">Cliente</ion-label>
+              <ion-item>
+                <ion-icon name="star" size="small" color="light"></ion-icon>
+                <ion-label color="light" class="format_text_score">4.8</ion-label>
+              </ion-item>
+            </ion-list>
+          </ion-item>
         </ion-toolbar>
       </ion-header>
       <ion-content color="dark">
-        <ion-list color="dark">
+        <ion-list>
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
             <ion-item color="dark" [routerDirection]="'root'" [routerLink]="[p.url]">
               <ion-icon color="light" slot="start" [name]="p.icon"></ion-icon>
@@ -30,7 +31,9 @@
         </ion-list>
       </ion-content>
       <ion-footer>
-
+          <ion-item color="dark">
+           <ion-img class="position_footer_logo" src="../assets/imgs/logoByBitdataBlanco.svg"></ion-img>
+          </ion-item>
       </ion-footer>
     </ion-menu>
     <ion-router-outlet main></ion-router-outlet>
