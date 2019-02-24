@@ -1,27 +1,38 @@
 <ion-header>
-  <ion-toolbar color="light">
+  <ion-toolbar>
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>
-      Solicitar servicio
-    </ion-title>
-    <ion-img class="position_footer_logo" slot="end" src="../assets/imgs/imaLogoApp.svg"></ion-img>
+    <ion-img slot="end" src="../assets/imgs/imaLogoApp.svg"></ion-img>
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="light">
-
-  <ion-content id="homeMap" [fullscreen]="true" [scrollY]="false">
-  </ion-content>
-
-  <!-- fab placed to the bottom start -->
-  <ion-fab vertical="bottom" horizontal="start" slot="fixed">
-    <ion-fab-button size="small" color="light">
-      <ion-icon name="locate"></ion-icon>
-    </ion-fab-button>
-    <ion-fab-button>
-      <ion-icon name="checkmark"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
+<ion-content id="homeMap" [fullscreen]="true" [scrollY]="false">
 </ion-content>
+
+  <ion-footer>
+    <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+      <ion-item color="transparent" lines="none">
+        <ion-label>¿Cuántos cilíndros necesita?:</ion-label>
+        <ion-select class="homeAmmountSelect" interface="popover">
+          <ion-select-option value="1">1</ion-select-option>
+          <ion-select-option value="2">2</ion-select-option>
+          <ion-select-option value="3">3</ion-select-option>
+          <ion-select-option value="4">4</ion-select-option>
+          <ion-select-option value="5">5</ion-select-option>
+          <ion-select-option value="6">6</ion-select-option>
+          <ion-select-option value="7">7</ion-select-option>
+          <ion-select-option value="8">8</ion-select-option>
+          <ion-select-option value="9">9</ion-select-option>
+          <ion-select-option value="10">10</ion-select-option>
+        </ion-select>
+        <!--<ion-input type="text"></ion-input>--></ion-item>
+      <ion-fab-button class="homeLocateMyPosition" size="small" color="light">
+        <ion-icon name="locate"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button class="homeSendRequest">
+        <ion-icon name="checkmark"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </ion-footer>
+

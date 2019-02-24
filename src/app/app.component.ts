@@ -22,9 +22,14 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'Historia de servicios',
-      url: '/historyservice',
+      title: 'Historial de servicios',
+      url: '/history',
       icon: 'filing'
+    },
+    {
+      title: 'Mensajes',
+      url: '/message',
+      icon: 'chatbubbles'
     }
   ];
 
