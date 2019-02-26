@@ -15,7 +15,7 @@ export class HomePage implements OnInit {
 
     constructor(
         private geolocation: Geolocation,
-        private loadingController: LoadingController
+        private loadingController: LoadingController,
     ) {
     }
 
@@ -57,5 +57,13 @@ export class HomePage implements OnInit {
             lat: rta.coords.latitude,
             lng: rta.coords.longitude
         };
+    }
+    private currentNumber = 0;
+    private increment () {
+        this.currentNumber++;
+    }
+
+    private decrement () {
+        this.currentNumber--;
     }
 }

@@ -1,13 +1,27 @@
-ion-item{
+ion-fab{
   ion-label{
     font-weight: bold;
     color: black;
+    font-size: small;
   }
 }
-ion-item{
-  ion-select{
-    font-weight: bold;
-    color: var(--ion-color-dark);
-    border-bottom: 2px solid #1e2023;
+.homeLogoApp{
+  --background: none;
+  --box-shadow:none;
+}
+.homeMenuButton{
+  --background: none;
+  --box-shadow:none;
+}
+ion-fab{
+  ion-fab-button{
+    ion-menu-button{
+      --color:var(--ion-color-dark) !important;
+    }
+  }
+}
+ion-fab{
+  ion-fab-button{
+    --background-activated: none;
   }
 }

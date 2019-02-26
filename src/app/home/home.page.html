@@ -1,32 +1,28 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-img slot="end" src="../assets/imgs/imaLogoApp.svg"></ion-img>
-  </ion-toolbar>
+    <ion-fab vertical="top" horizontal="start" slot="fixed">
+      <ion-fab-button class="homeMenuButton">
+        <ion-menu-button></ion-menu-button>
+      </ion-fab-button>
+    </ion-fab>
+    <ion-fab vertical="top" horizontal="end" slot="fixed">
+      <ion-fab-button class="homeLogoApp">
+        <ion-img src="../assets/imgs/imaLogoApp.svg"></ion-img>
+      </ion-fab-button>
+    </ion-fab>
+  <ion-fab vertical="top" horizontal="center" slot="fixed">
+    <ion-fab-button class="homeLogoApp">
+      <ion-icon name="remove-circle" (click)="decrement()"></ion-icon>
+      {{currentNumber}}
+      <ion-icon name="add-circle" (click)="increment()"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-header>
-
 <ion-content id="homeMap" [fullscreen]="true" [scrollY]="false">
+
 </ion-content>
 
   <ion-footer>
     <ion-fab vertical="bottom" horizontal="start" slot="fixed">
-      <ion-item color="transparent" lines="none">
-        <ion-label>¿Cuántos cilíndros necesita?:</ion-label>
-        <ion-select class="homeAmmountSelect" interface="popover">
-          <ion-select-option value="1">1</ion-select-option>
-          <ion-select-option value="2">2</ion-select-option>
-          <ion-select-option value="3">3</ion-select-option>
-          <ion-select-option value="4">4</ion-select-option>
-          <ion-select-option value="5">5</ion-select-option>
-          <ion-select-option value="6">6</ion-select-option>
-          <ion-select-option value="7">7</ion-select-option>
-          <ion-select-option value="8">8</ion-select-option>
-          <ion-select-option value="9">9</ion-select-option>
-          <ion-select-option value="10">10</ion-select-option>
-        </ion-select>
-        <!--<ion-input type="text"></ion-input>--></ion-item>
       <ion-fab-button class="homeLocateMyPosition" size="small" color="light">
         <ion-icon name="locate"></ion-icon>
       </ion-fab-button>
