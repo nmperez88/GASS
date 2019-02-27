@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Geolocation} from '@ionic-native/Geolocation/ngx';
-import {LoadingController} from '@ionic/angular';
+import {LoadingController, ModalController} from '@ionic/angular';
+import {SuccessfulPage} from '../successful/successful.page';
 
 declare var google;
 
@@ -16,9 +17,17 @@ export class HomePage implements OnInit {
     constructor(
         private geolocation: Geolocation,
         private loadingController: LoadingController,
+        public modalController: ModalController,
     ) {
     }
 
+    async successful(){
+        const modal = await this.modalController.create({
+            component: SuccessfulPage,
+            cssClass: 'modalSuccessful',
+        });
+        await modal.present();
+    }
     ngOnInit(): void {
         this.loadMap();
     }

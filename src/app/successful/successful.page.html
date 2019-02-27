@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title slot="start">Usted será atendido por:</ion-title>
+  </ion-toolbar>
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button size="small" class="homeModalClose">
+      <ion-icon (click)="dismiss()" color="dark" name="close-circle"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-header>
+
+<ion-content padding>
+  <ion-item lines="none">
+    <ion-avatar class="modalUserpicture" slot="start" class="modalAvatarCenter">
+      <img src="../../assets/imgs/userPicture.svg">
+    </ion-avatar>
+    <ion-list>
+      <ion-label class="modalTextUsernameProfile">Item Avatar</ion-label>
+      <ion-item lines="none">
+        <ion-icon name="star" size="small"></ion-icon>
+        <ion-label class="formatTextScoreMenu">4.8</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-item>
+  <ion-item lines="none">
+    <ion-avatar class="modalUserpicture" slot="start" class="modalAvatarCenter">
+      <img src="../../assets/imgs/userPicture.svg">
+    </ion-avatar>
+    <ion-list>
+      <ion-label class="modalTextUsernameProfile">Truck ID</ion-label>
+    </ion-list>
+  </ion-item>
+  <ion-item lines="none">
+    <ion-button class="modalSaveButton" slot="start" color="primary">
+      <ion-icon size="small" name="chatboxes"></ion-icon></ion-button>
+    <ion-button class="modalCloseButton" slot="end" color="medium">
+      <ion-icon size="small" name="close"></ion-icon></ion-button>
+  </ion-item>
+</ion-content>

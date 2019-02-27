@@ -20,7 +20,8 @@ const routes: Routes = [
   { path: 'message', loadChildren: './message/message.module#MessagePageModule' },
   { path: 'registration', loadChildren: './registration/registration.module#RegistrationPageModule' },
   { path: 'codeverification', loadChildren: './codeverification/codeverification.module#CodeverificationPageModule' },
-  { path: 'history', loadChildren: './history/history.module#HistoryPageModule' }
+  { path: 'history', loadChildren: './history/history.module#HistoryPageModule' },
+  { path: 'successful', loadChildren: './successful/successful.module#SuccessfulPageModule' },
 ];
 
 @NgModule({
