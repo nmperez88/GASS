@@ -9,13 +9,13 @@
   </ion-fab>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding [scrollY]="false">
       <ion-item lines="none">
         <ion-avatar class="profileUserpicture" slot="start" class="modalAvatarCenter">
           <img src="../../assets/imgs/userPicture.svg">
         </ion-avatar>
         <ion-list>
-          <ion-label class="modalTextUsernameProfile">Item Avatar</ion-label>
+          <ion-label class="modalTextUsernameProfile">Efraín Guachulca</ion-label>
           <ion-badge slot="end" class="modalTextRolProfile">4.8</ion-badge>
         </ion-list>
       </ion-item>
@@ -24,15 +24,22 @@
           <img src="../../assets/imgs/userPicture.svg">
         </ion-avatar>
         <ion-list>
-          <ion-label class="modalTextUsernameProfile">PDC 7814</ion-label>
+          <ion-label class="modalTextUsernameProfile">Placa:</ion-label>
+          <ion-label class="modalTextRolProfile">PDC 7814</ion-label>
         </ion-list>
       </ion-item>
   <ion-item>
     <ion-label class="modalTextRolProfile">Distancia:</ion-label>
-    <ion-badge class="modalTextRolProfile">4.8KM</ion-badge>
+    <ion-badge class="modalTextRolProfile">4.8 km</ion-badge>
   </ion-item>
   <ion-item>
     <ion-label class="modalTextRolProfile">Tiempo de llegada:</ion-label>
-    <ion-badge class="modalTextRolProfile">15mins</ion-badge>
+    <ion-badge class="modalTextRolProfile">15 mins</ion-badge>
+  </ion-item>
+  <ion-item lines="none">
+    <ion-button class="modalSaveButton" slot="start" color="primary">
+      <ion-icon size="small" name="chatboxes"></ion-icon></ion-button>
+    <ion-button (click)="dismiss()" class="modalCloseButton" slot="end" color="medium">
+      <ion-icon size="small" name="close"></ion-icon></ion-button>
   </ion-item>
 </ion-content>

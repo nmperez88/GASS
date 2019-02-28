@@ -15,8 +15,9 @@ ion-item{
   ion-button{
     margin-top: 200px;
     font-weight: bold;
-    width: 130px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
+    --border-radius: 60px;
   }
 }
 .profileTextUsernameProfile{

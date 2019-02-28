@@ -24,7 +24,7 @@ ion-title{
 }
 ion-item{
   ion-button{
-    margin-top: 10px;
+    margin-top: 25px;
     font-weight: bold;
     width: 40px;
     height: 40px;
@@ -39,9 +39,5 @@ ion-list{
 }
 ion-content, ion-item, ion-label{
   --background: var(--ion-color-dark);
-}
-.aa{
-  border: 1px solid #0ec254;
-  padding: 30px 0 0 40px;
 }
 
