@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar slot="secondary">
     <ion-title slot="start">Usted será atendido por:</ion-title>
   </ion-toolbar>
   <ion-fab vertical="top" horizontal="end" slot="fixed">
@@ -10,30 +10,29 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-item lines="none">
-    <ion-avatar class="modalUserpicture" slot="start" class="modalAvatarCenter">
-      <img src="../../assets/imgs/userPicture.svg">
-    </ion-avatar>
-    <ion-list>
-      <ion-label class="modalTextUsernameProfile">Item Avatar</ion-label>
       <ion-item lines="none">
-        <ion-icon name="star" size="small"></ion-icon>
-        <ion-label class="formatTextScoreMenu">4.8</ion-label>
+        <ion-avatar class="profileUserpicture" slot="start" class="modalAvatarCenter">
+          <img src="../../assets/imgs/userPicture.svg">
+        </ion-avatar>
+        <ion-list>
+          <ion-label class="modalTextUsernameProfile">Item Avatar</ion-label>
+          <ion-badge slot="end" class="modalTextRolProfile">4.8</ion-badge>
+        </ion-list>
       </ion-item>
-    </ion-list>
+      <ion-item lines="none">
+        <ion-avatar class="profileUserpicture" slot="start" class="modalAvatarCenter">
+          <img src="../../assets/imgs/userPicture.svg">
+        </ion-avatar>
+        <ion-list>
+          <ion-label class="modalTextUsernameProfile">PDC 7814</ion-label>
+        </ion-list>
+      </ion-item>
+  <ion-item>
+    <ion-label class="modalTextRolProfile">Distancia:</ion-label>
+    <ion-badge class="modalTextRolProfile">4.8KM</ion-badge>
   </ion-item>
-  <ion-item lines="none">
-    <ion-avatar class="modalUserpicture" slot="start" class="modalAvatarCenter">
-      <img src="../../assets/imgs/userPicture.svg">
-    </ion-avatar>
-    <ion-list>
-      <ion-label class="modalTextUsernameProfile">Truck ID</ion-label>
-    </ion-list>
-  </ion-item>
-  <ion-item lines="none">
-    <ion-button class="modalSaveButton" slot="start" color="primary">
-      <ion-icon size="small" name="chatboxes"></ion-icon></ion-button>
-    <ion-button class="modalCloseButton" slot="end" color="medium">
-      <ion-icon size="small" name="close"></ion-icon></ion-button>
+  <ion-item>
+    <ion-label class="modalTextRolProfile">Tiempo de llegada:</ion-label>
+    <ion-badge class="modalTextRolProfile">15mins</ion-badge>
   </ion-item>
 </ion-content>

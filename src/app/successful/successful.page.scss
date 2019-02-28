@@ -5,19 +5,22 @@
 ion-title{
   font-size: large;
   font-family: "Calibri";
+  color: white;
 }
 .modalAvatarCenter{
-  margin: 5% 5% 0 0;
+  margin: 0 3% 0 0;
   background-color: var(--ion-color-dark);
 }
 .modalTextUsernameProfile{
   font-family: "Calibri";
   font-size: large;
+  color: white;
 }
 .modalTextRolProfile{
   font-style: italic ;
   font-family: "Calibri";
   font-size: small;
+  color: white;
 }
 ion-item{
   ion-button{
@@ -28,3 +31,17 @@ ion-item{
     --border-radius: 40px;
   }
 }
+ion-toolbar{
+  --background: var(--ion-color-primary);
+}
+ion-list{
+  --ion-background-color:#222428;
+}
+ion-content, ion-item, ion-label{
+  --background: var(--ion-color-dark);
+}
+.aa{
+  border: 1px solid #0ec254;
+  padding: 30px 0 0 40px;
+}
+
