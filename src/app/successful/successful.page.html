@@ -4,7 +4,7 @@
   </ion-toolbar>
   <ion-fab vertical="top" horizontal="end" slot="fixed">
     <ion-fab-button size="small" class="homeModalClose">
-      <ion-icon (click)="dismiss()" color="dark" name="close-circle"></ion-icon>
+      <ion-icon (click)="modalDismiss()" color="dark" name="close-circle"></ion-icon>
     </ion-fab-button>
   </ion-fab>
 </ion-header>
@@ -39,7 +39,7 @@
   <ion-item lines="none" class="successfulItemButtons">
     <ion-button class="modalSaveButton" slot="start" color="primary">
       <ion-icon size="small" name="chatboxes"></ion-icon></ion-button>
-    <ion-button (click)="dismiss()" class="modalCloseButton" slot="end" color="medium">
+    <ion-button (click)="modalDismiss()" class="modalCloseButton" slot="end" color="medium">
       <ion-icon size="small" name="close"></ion-icon></ion-button>
   </ion-item>
 </ion-content>

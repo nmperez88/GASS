@@ -9,12 +9,12 @@ import {ModalController, NavController} from '@ionic/angular';
 export class SuccessfulPage implements OnInit {
 
   constructor(
-      public modalController: ModalController
+      public modalController: ModalController,
   ) { }
 
   ngOnInit() {
   }
-  dismiss() {
+  modalDismiss() {
    this.modalController.dismiss();
   }
 }
