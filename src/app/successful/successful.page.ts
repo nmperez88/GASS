@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ModalController} from '@ionic/angular';
+import {ModalController, NavController} from '@ionic/angular';
 
 @Component({
   selector: 'app-successful',
@@ -8,11 +8,13 @@ import {ModalController} from '@ionic/angular';
 })
 export class SuccessfulPage implements OnInit {
 
-  constructor(public modalController: ModalController) { }
+  constructor(
+      public modalController: ModalController
+  ) { }
 
   ngOnInit() {
   }
-  dismiss(){
+  dismiss() {
    this.modalController.dismiss();
   }
 }

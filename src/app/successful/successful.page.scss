@@ -40,4 +40,7 @@ ion-list{
 ion-content, ion-item, ion-label{
   --background: var(--ion-color-dark);
 }
-
+.successfulItemButtons{
+  --padding-start:40px;
+  --padding-end:40px;
+}

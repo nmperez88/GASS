@@ -21,7 +21,7 @@ export class HomePage implements OnInit {
     ) {
     }
 
-    async successful(){
+    async successfulPage(){
         const modal = await this.modalController.create({
             component: SuccessfulPage,
             cssClass: 'modalSuccessful',
