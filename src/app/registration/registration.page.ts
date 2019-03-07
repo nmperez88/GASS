@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ModalController} from '@ionic/angular';
+import {VerificationPage} from '../verification/verification.page';
 
 @Component({
   selector: 'app-registration',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistrationPage implements OnInit {
 
-  constructor() { }
+  constructor(public modalController: ModalController ) {}
 
+  async verificationPage() {
+    const modal = await this.modalController.create({
+      component: VerificationPage,
+      cssClass: 'modalVerification',
+    });
+    await modal.present();
+  }
   ngOnInit() {
   }
-
 }

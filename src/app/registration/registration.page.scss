@@ -1,0 +1,40 @@
+.avatarCenterProfile{
+  margin: 5% 0 5% 0;
+  background-color: var(--ion-color-dark);
+}
+ion-list{
+  --ion-background-color:#F7931E;
+}
+ion-list{
+  ion-item{
+    border: none;
+    --ion-background-color:#ffffff;
+  }
+}
+ion-item{
+  ion-button{
+    margin-top: 80px;
+    font-weight: bold;
+    width: 60px;
+    height: 60px;
+    --border-radius: 60px;
+  }
+}
+.registrationTextUsernameProfile{
+  font-family: "Calibri";
+  font-size: large;
+}
+.registrationTextRolProfile{
+  font-style: italic ;
+  font-family: "Calibri";
+  font-size: small;
+}
+.registrationItemButtons{
+  --padding-start:40px;
+  --padding-end:40px;
+}
+.registrationLogoApp{
+  margin: 0 auto;
+  width: 250px;
+  height: 125px;
+}

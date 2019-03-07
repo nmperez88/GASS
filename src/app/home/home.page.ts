@@ -12,6 +12,7 @@ declare var google;
 })
 export class HomePage implements OnInit {
 
+    private currentNumber = 0;
     mapRef = null;
 
     constructor(
@@ -67,7 +68,7 @@ export class HomePage implements OnInit {
             lng: rta.coords.longitude
         };
     }
-    private currentNumber = 0;
+
     private increment () {
         this.currentNumber++;
     }

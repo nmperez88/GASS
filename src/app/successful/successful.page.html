@@ -37,8 +37,9 @@
     <ion-badge class="modalTextRolProfile">15 mins</ion-badge>
   </ion-item>
   <ion-item lines="none" class="successfulItemButtons">
-    <ion-button class="modalSaveButton" slot="start" color="primary">
-      <ion-icon size="small" name="chatboxes"></ion-icon></ion-button>
+    <ion-button class="modalSChatButton" slot="start" color="primary" (click)="openMessagePage()">
+      <ion-icon size="small" name="chatboxes"></ion-icon>
+    </ion-button>
     <ion-button (click)="modalDismiss()" class="modalCloseButton" slot="end" color="medium">
       <ion-icon size="small" name="close"></ion-icon></ion-button>
   </ion-item>

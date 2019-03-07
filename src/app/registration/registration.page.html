@@ -1,9 +1,40 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>registration</ion-title>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start" type="center">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Regístrate</ion-title>
+    <ion-icon name="person-add" size="large" slot="end"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-
+<ion-content padding [scrollY]="false">
+  <ion-img class="registrationLogoApp" src="../assets/imgs/logoGass.svg">
+  </ion-img>
+  <ion-item>
+    <ion-label fixed><ion-icon name="person"></ion-icon></ion-label>
+    <ion-input class="registrationInputName" placeholder="Nombre" clearInput type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label fixed><ion-icon name="person"></ion-icon></ion-label>
+    <ion-input class="registrationInputLastname" placeholder="Apellidos" clearInput type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label fixed><ion-icon name="mail"></ion-icon></ion-label>
+    <ion-input class="registrationInputMail" placeholder="usuario@dominio.com" clearInput type="email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label fixed><ion-icon name="call"></ion-icon></ion-label>
+    <ion-input class="registrationInputTelf" placeholder="+593 ## ### ####" clearInput type="tel"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label fixed><ion-icon name="compass"></ion-icon></ion-label>
+    <ion-textarea class="registrationInputAddr" placeholder="Dirección" type="text"></ion-textarea>
+  </ion-item>
+  <ion-item lines="none" class="registrationItemButtons">
+    <ion-button class="registrationSaveButton" slot="start" color="primary" (click)="verificationPage()">
+      <ion-icon size="large" name="paper-plane"></ion-icon></ion-button>
+    <ion-button class="registrationCloseButton" slot="end" color="dark">
+      <ion-icon size="large" name="close"></ion-icon></ion-button>
+  </ion-item>
 </ion-content>

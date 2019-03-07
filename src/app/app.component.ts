@@ -30,6 +30,11 @@ export class AppComponent {
       title: 'Mensajes',
       url: '/message',
       icon: 'chatbubbles'
+    },
+    {
+      title: 'Registrarse',
+      url: '/registration',
+      icon: 'filing'
     }
   ];
 

@@ -10,11 +10,15 @@ export class SuccessfulPage implements OnInit {
 
   constructor(
       public modalController: ModalController,
-  ) { }
+      public navController: NavController,
+  ) {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
   modalDismiss() {
    this.modalController.dismiss();
+  }
+  openMessagePage() {
+    this.navController.navigateForward('/message');
+    this.modalDismiss();
   }
 }

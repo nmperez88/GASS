@@ -1,22 +1,22 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CodeverificationPage } from './codeverification.page';
+import { VerificationPage } from './verification.page';
 
-describe('CodeverificationPage', () => {
-  let component: CodeverificationPage;
-  let fixture: ComponentFixture<CodeverificationPage>;
+describe('VerificationPage', () => {
+  let component: VerificationPage;
+  let fixture: ComponentFixture<VerificationPage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CodeverificationPage ],
+      declarations: [ VerificationPage ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CodeverificationPage);
+    fixture = TestBed.createComponent(VerificationPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
