@@ -3,7 +3,7 @@
     <ion-title slot="start">Usted será atendido por:</ion-title>
   </ion-toolbar>
   <ion-fab vertical="top" horizontal="end" slot="fixed">
-    <ion-fab-button size="small" class="homeModalClose">
+    <ion-fab-button size="small" class="successfulModalClose">
       <ion-icon (click)="modalDismiss()" color="dark" name="close-circle"></ion-icon>
     </ion-fab-button>
   </ion-fab>
@@ -11,36 +11,36 @@
 
 <ion-content padding [scrollY]="false">
       <ion-item lines="none">
-        <ion-avatar class="profileUserpicture" slot="start" class="modalAvatarCenter">
+        <ion-avatar class="successfulUserPicture" slot="start">
           <img src="../../assets/imgs/userPicture.svg">
         </ion-avatar>
         <ion-list>
-          <ion-label class="modalTextUsernameProfile">Efraín Guachulca</ion-label>
-          <ion-badge slot="end" class="modalTextRolProfile">4.8</ion-badge>
+          <ion-label class="successfulTextUsername">Efraín Guachulca</ion-label>
+          <ion-badge slot="end" class="successfulTextRol">4.8</ion-badge>
         </ion-list>
       </ion-item>
       <ion-item lines="none">
-        <ion-avatar class="profileUserpicture" slot="start" class="modalAvatarCenter">
+        <ion-avatar class="successfulTextUsername" slot="start">
           <img src="../../assets/imgs/userPicture.svg">
         </ion-avatar>
         <ion-list>
-          <ion-label class="modalTextUsernameProfile">Placa:</ion-label>
-          <ion-label class="modalTextRolProfile">PDC 7814</ion-label>
+          <ion-label class="successfulTextUsername">Placa:</ion-label>
+          <ion-label class="successfulTextRol">PDC 7814</ion-label>
         </ion-list>
       </ion-item>
   <ion-item>
-    <ion-label class="modalTextRolProfile">Distancia:</ion-label>
-    <ion-badge class="modalTextRolProfile">4.8 km</ion-badge>
+    <ion-label class="successfulTextRol">Distancia:</ion-label>
+    <ion-badge class="successfulTextRol">4.8 km</ion-badge>
   </ion-item>
   <ion-item>
-    <ion-label class="modalTextRolProfile">Tiempo de llegada:</ion-label>
-    <ion-badge class="modalTextRolProfile">15 mins</ion-badge>
+    <ion-label class="successfulTextRol">Tiempo de llegada:</ion-label>
+    <ion-badge class="successfulTextRol">15 mins</ion-badge>
   </ion-item>
   <ion-item lines="none" class="successfulItemButtons">
-    <ion-button class="modalSChatButton" slot="start" color="primary" (click)="openMessagePage()">
+    <ion-button class="successfullSChatButton" slot="start" color="primary" (click)="successfulOpenMessagePage()">
       <ion-icon size="small" name="chatboxes"></ion-icon>
     </ion-button>
-    <ion-button (click)="modalDismiss()" class="modalCloseButton" slot="end" color="medium">
+    <ion-button (click)="modalDismiss()" class="successfulCloseButton" slot="end" color="medium">
       <ion-icon size="small" name="close"></ion-icon></ion-button>
   </ion-item>
 </ion-content>

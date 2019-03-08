@@ -22,7 +22,7 @@ export class HomePage implements OnInit {
     ) {
     }
 
-    async successfulPage(){
+    async successfulPage() {
         const modal = await this.modalController.create({
             component: SuccessfulPage,
             cssClass: 'modalSuccessful',

@@ -1,25 +1,6 @@
-.homeModalClose{
-  --background: none;
-  --box-shadow:none;
-}
 ion-title{
   font-size: large;
   font-family: "Calibri";
-  color: white;
-}
-.modalAvatarCenter{
-  margin: 0 3% 0 0;
-  background-color: var(--ion-color-dark);
-}
-.modalTextUsernameProfile{
-  font-family: "Calibri";
-  font-size: large;
-  color: white;
-}
-.modalTextRolProfile{
-  font-style: italic ;
-  font-family: "Calibri";
-  font-size: small;
   color: white;
 }
 ion-item{
@@ -39,6 +20,25 @@ ion-list{
 }
 ion-content, ion-item, ion-label{
   --background: var(--ion-color-dark);
+}
+.successfulModalClose{
+  --background: none;
+  --box-shadow:none;
+}
+.successfulUserPicture{
+  margin: 0 3% 0 0;
+  background-color: var(--ion-color-dark);
+}
+.successfulTextUsername{
+  font-family: "Calibri";
+  font-size: large;
+  color: white;
+}
+.successfulTextRol{
+  font-style: italic ;
+  font-family: "Calibri";
+  font-size: small;
+  color: white;
 }
 .successfulItemButtons{
   --padding-start:40px;

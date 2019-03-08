@@ -19,10 +19,10 @@ export class AppComponent {
     {
       title: 'Solicitar Servicio',
       url: '/home',
-      icon: 'home'
+      icon: 'checkmark-circle-outline'
     },
     {
-      title: 'Historial de servicios',
+      title: 'Historial de Solicitudes',
       url: '/history',
       icon: 'filing'
     },

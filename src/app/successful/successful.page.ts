@@ -17,7 +17,7 @@ export class SuccessfulPage implements OnInit {
   modalDismiss() {
    this.modalController.dismiss();
   }
-  openMessagePage() {
+  successfulOpenMessagePage() {
     this.navController.navigateForward('/message');
     this.modalDismiss();
   }
