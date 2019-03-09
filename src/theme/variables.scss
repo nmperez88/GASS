@@ -66,11 +66,16 @@
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
 }
-/*.modalSuccessful {
+.modalVerification {
   .modal-wrapper {
-    --height: 50% !important;
+    position: absolute;
+    margin: 0 auto;
+    display: block;
+    --width: 90%;
+    --height: 50%;
+    --border-radius:10px;
   }
-}*/
+}
 .modal-wrapper {
   position: absolute;
   margin: 0 auto;

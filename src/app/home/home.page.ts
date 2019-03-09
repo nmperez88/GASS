@@ -12,7 +12,7 @@ declare var google;
 })
 export class HomePage implements OnInit {
 
-    private currentNumber = 0;
+    public currentNumber = 0;
     mapRef = null;
 
     constructor(
