@@ -22,6 +22,9 @@ const routes: Routes = [
   { path: 'successful', loadChildren: './successful/successful.module#SuccessfulPageModule' },
   { path: 'verification', loadChildren: './verification/verification.module#VerificationPageModule' },
   { path: 'registration', loadChildren: './registration/registration.module#RegistrationPageModule' },
+  { path: 'billing', loadChildren: './billing/billing.module#BillingPageModule' },
+  { path: 'tabs', loadChildren: './tabs/tabs.module#TabsPageModule' },
+  { path: 'truck', loadChildren: './truck/truck.module#TruckPageModule' },
 ];
 
 @NgModule({

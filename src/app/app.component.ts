@@ -13,7 +13,7 @@ export class AppComponent {
   public appPages = [
     {
       title: 'Mi Perfil',
-      url: '/profile',
+      url: '/tabs',
       icon: 'person'
     },
     {
@@ -35,6 +35,11 @@ export class AppComponent {
       title: 'Registrarse',
       url: '/registration',
       icon: 'filing'
+    },
+    {
+      title: 'Facturación',
+      url: '/billing',
+      icon: 'logo-usd'
     }
   ];
 

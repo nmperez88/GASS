@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start" type="center">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-item color="primary" lines="none">
+      <ion-avatar class="truckUserPicture" slot="end">
+        <img src="../../assets/imgs/userPicture.svg">
+      </ion-avatar>
+      <ion-list>
+        <ion-label class="truckTextUsername">Item Avatar</ion-label>
+        <ion-label class="truckTextRol">Cliente</ion-label>
+      </ion-list>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding [scrollY]="false">
+  <ion-item>
+    <ion-label fixed><ion-icon name="person"></ion-icon></ion-label>
+    <ion-input class="truckInputName" clearInput type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label fixed><ion-icon name="person"></ion-icon></ion-label>
+    <ion-input class="truckInputLastname" clearInput type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label fixed><ion-icon name="mail"></ion-icon></ion-label>
+    <ion-input class="truckInputMail" clearInput type="email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label fixed><ion-icon name="call"></ion-icon></ion-label>
+    <ion-input class="truckInputTelf" clearInput type="tel"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label fixed><ion-icon name="compass"></ion-icon></ion-label>
+    <ion-textarea class="truckInputAddr" type="text"></ion-textarea>
+  </ion-item>
+  <ion-item lines="none" class="truckItemButtons">
+    <ion-button class="truckSaveButton" slot="start" color="primary">
+      <ion-icon size="large" name="paper-plane"></ion-icon></ion-button>
+    <ion-button class="truckCloseButton" slot="end" color="dark">
+      <ion-icon size="large" name="close"></ion-icon></ion-button>
+  </ion-item>
+</ion-content>
