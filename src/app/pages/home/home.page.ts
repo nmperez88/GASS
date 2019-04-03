@@ -1,7 +1,7 @@
-import {Component, OnInit} from '@angular/core';
-import {Geolocation} from '@ionic-native/Geolocation/ngx';
-import {LoadingController, ModalController} from '@ionic/angular';
-import {SuccessfulPage} from '../successful/successful.page';
+import { Component, OnInit } from '@angular/core';
+import { Geolocation } from '@ionic-native/Geolocation/ngx';
+import { LoadingController, ModalController } from '@ionic/angular';
+import { SuccessfulPage } from '../successful/successful.page';
 
 declare var google;
 
@@ -22,15 +22,16 @@ export class HomePage implements OnInit {
     ) {
     }
 
+    ngOnInit(): void {
+        this.loadMap();
+    }
+
     async successfulPage() {
         const modal = await this.modalController.create({
             component: SuccessfulPage,
             cssClass: 'modalSuccessful',
         });
         await modal.present();
-    }
-    ngOnInit(): void {
-        this.loadMap();
     }
 
     async loadMap() {
@@ -44,7 +45,8 @@ export class HomePage implements OnInit {
         // create map
         const map = new google.maps.Map(mapEle, {
             center: myLatLng,
-            zoom: 12
+            zoom: 12,
+            disableDefaultUI: true
         });
 
         google.maps.event.addListenerOnce(map, 'idle', () => {
@@ -69,11 +71,11 @@ export class HomePage implements OnInit {
         };
     }
 
-    private increment () {
+    private increment() {
         this.currentNumber++;
     }
 
-    private decrement () {
+    private decrement() {
         this.currentNumber--;
     }
 }

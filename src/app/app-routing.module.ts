@@ -9,23 +9,24 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: './home/home.module#HomePageModule'
+    loadChildren: './pages/home/home.module#HomePageModule'
+    // loadChildren: './home/home.module#HomePageModule'
   },
   {
     path: 'list',
-    loadChildren: './list/list.module#ListPageModule'
+    loadChildren: './pages/list/list.module#ListPageModule'
+    // loadChildren: './list/list.module#ListPageModule'
   },
-  { path: 'profile', loadChildren: './profile/profile.module#ProfilePageModule' },
-  { path: 'history', loadChildren: './history/history.module#HistoryPageModule' },
-  { path: 'message', loadChildren: './message/message.module#MessagePageModule' },
-  { path: 'history', loadChildren: './history/history.module#HistoryPageModule' },
-  { path: 'successful', loadChildren: './successful/successful.module#SuccessfulPageModule' },
-  { path: 'verification', loadChildren: './verification/verification.module#VerificationPageModule' },
-  { path: 'registration', loadChildren: './registration/registration.module#RegistrationPageModule' },
+  { path: 'profile', loadChildren: './pages/profile/profile.module#ProfilePageModule' },
+  { path: 'history', loadChildren: './pages/history/history.module#HistoryPageModule' },
+  { path: 'message', loadChildren: './pages/message/message.module#MessagePageModule' },
+  { path: 'successful', loadChildren: './pages/successful/successful.module#SuccessfulPageModule' },
+  { path: 'verification', loadChildren: './pages/verification/verification.module#VerificationPageModule' },
+  { path: 'registration', loadChildren: './pages/registration/registration.module#RegistrationPageModule' },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
