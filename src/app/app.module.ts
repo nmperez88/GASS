@@ -12,6 +12,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AngularFireModule } from '@angular/fire';
 import { firebaseConfig } from './config/firebase';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { firebaseUiAuthConfig } from './config/firebaseui';
+import { FirebaseUIModule } from 'firebaseui-angular';
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,6 +24,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
     AppRoutingModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireAuthModule,
+    FirebaseUIModule.forRoot(firebaseUiAuthConfig),
   ],
   providers: [
     StatusBar,

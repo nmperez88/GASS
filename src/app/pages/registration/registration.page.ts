@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {ModalController} from '@ionic/angular';
-import {VerificationPage} from '../verification/verification.page';
+import { ModalController } from '@ionic/angular';
+import { VerificationPage } from '../verification/verification.page';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { User } from '../../model/user';
 import { ToastController } from '@ionic/angular';

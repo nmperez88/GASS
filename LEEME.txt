@@ -26,6 +26,12 @@ Firebase:
 	Comandos:
 		npm install @angular/fire firebase --save
 		
+Firebaseui(angular):
+    doc: https://www.npmjs.com/package/firebaseui-angular
+	Comandos:
+		npm i firebaseui-angular --save
+        npm install firebase firebaseui @angular/fire firebaseui-angular --save
+
 
 ionic serve -l
 
