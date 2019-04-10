@@ -21,6 +21,11 @@ Geolocalización:
                     En el header:
                         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmiIbf_0HqWtwP3xB2Hf3Jj4uVp_4hDSg"></script>
 
+Firebase:
+	doc: https://github.com/angular/angularfire2/blob/master/docs/install-and-setup.md
+	Comandos:
+		npm install @angular/fire firebase --save
+		
 
 ionic serve -l
 
