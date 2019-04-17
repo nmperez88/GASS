@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ModalController} from '@ionic/angular';
+import { ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'app-verification',
@@ -8,12 +8,20 @@ import {ModalController} from '@ionic/angular';
 })
 export class VerificationPage implements OnInit {
 
+  user = '';
+  public code = '';
+
   constructor(
-      public modalController: ModalController,
+    public modalController: ModalController,
   ) { }
 
-  ngOnInit() {}
-  modalDismiss() {
-    this.modalController.dismiss();
+  ngOnInit() { }
+
+  resend() {
+    // this.modalController.dismiss();
+  }
+
+  dismiss() {
+    this.modalController.dismiss({ 'code': this.code });
   }
 }

@@ -15,6 +15,7 @@ const routes: Routes = [
   { path: 'billing', loadChildren: './pages/billing/billing.module#BillingPageModule' },
   { path: 'tabs', loadChildren: './pages/tabs/tabs.module#TabsPageModule' },
   { path: 'truck', loadChildren: './pages/truck/truck.module#TruckPageModule' },
+
 ];
 
 @NgModule({
