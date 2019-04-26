@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start" type="center">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Regístrate</ion-title>
+    <ion-icon name="person-add" size="large" slot="end"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding [scrollY]="false">
+  <ion-img class="registrationLogoApp" src="../assets/imgs/logoGass.svg"></ion-img>
+  <!-- <firebase-ui></firebase-ui> -->
+  <form #form="ngForm" (ngSubmit)="register()">
+    <ion-item>
+      <ion-label fixed>
+        <ion-icon name="person"></ion-icon>
+      </ion-label>
+      <ion-input required clearInput type="text"
+        [(ngModel)]="user.name" name="name" class="registrationInputName" placeholder="Nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>
+        <ion-icon name="person"></ion-icon>
+      </ion-label>
+      <ion-input required clearInput type="text"
+        [(ngModel)]="user.lastname" name="lastname" class="registrationInputLastname" placeholder="Apellidos" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>
+        <ion-icon name="mail"></ion-icon>
+      </ion-label>
+      <ion-input required clearInputtype="email"
+        [(ngModel)]="user.email" name="email" class="registrationInputMail" placeholder="Email" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>
+        <ion-icon name="call"></ion-icon>
+      </ion-label>
+      <ion-input required clearInput type="tel"
+        [(ngModel)]="user.cellphone" name="cellphone" class="registrationInputTelf" placeholder="+593 00 000 0000"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>
+        <ion-icon name="compass"></ion-icon>
+      </ion-label>
+      <ion-textarea required type="text" [(ngModel)]="user.addr"
+        name="addr" class="registrationInputAddr" placeholder="Dirección"></ion-textarea>
+    </ion-item>
+    <!-- <ion-item>
+    <ion-label fixed><ion-icon name="key"></ion-icon></ion-label>
+    <ion-input clearInput type="password" [(ngModel)]="password"  placeholder="Clave"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label fixed><ion-icon name="key"></ion-icon></ion-label>
+    <ion-input clearInput type="password" [(ngModel)]="confirmPassword" placeholder="Confirmar clave"></ion-input>
+  </ion-item> -->
+
+    <div id="captcha" style="display: none;"></div>
+    <ion-item lines="none" class="registrationItemButtons">
+      <ion-button id="registerBtn" type="submit" [disabled]="form.invalid" class="registrationSaveButton" slot="start"
+        color="primary">
+        <!-- <ion-button id="registerBtn" type="submit" class="registrationSaveButton" slot="start" color="primary"> -->
+        <ion-icon size="large" name="paper-plane"></ion-icon>
+      </ion-button>
+      <ion-button class="registrationCloseButton" slot="end" color="dark">
+        <ion-icon size="large" name="close"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </form>
+</ion-content>

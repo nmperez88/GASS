@@ -32,7 +32,32 @@ Firebaseui(angular):
 		npm i firebaseui-angular --save
         npm install firebase firebaseui @angular/fire firebaseui-angular --save
 
+Generar servicio:
+    ionic g service services/authentication
+    ionic g service services/entityManager
 
+Generar guard:
+    ionic g guard guards/authentication
+
+Generar router:
+    descripción:
+        g-> generate
+        m-> module
+        route-> Your route Module Name(You can use any name).
+        --flat puts the file in src/app instead of its own folder.
+        --module=app tells the CLI to register it in the imports array of the AppModule
+    Ejemplo:
+        Generarlo en src/app:
+            npx ng g m secure-routing --flat --module=app
+        Generarlo en src/app/routing/secure-routing:
+            npx ng g m routing/secure-routing --module=app
+            
+        EUREKA Generarlo en src/app/routing:
+            npx ng g m routing/secure-routing --flat --module=app
+
+Storage:
+    npm install --save @ionic/storage
+    
 ionic serve -l
 
 A programar!

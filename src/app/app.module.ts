@@ -10,10 +10,11 @@ import { Geolocation } from '@ionic-native/Geolocation/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { firebaseConfig } from './config/firebase';
 import { AngularFireAuthModule } from '@angular/fire/auth';
-// import { firebaseUiAuthConfig } from './config/firebaseui';
-// import { FirebaseUIModule } from 'firebaseui-angular';
+import { SecureRoutingModule } from './routing/secure-routing.module';
+import { IonicStorageModule } from '@ionic/storage';
 
 @NgModule({
   declarations: [AppComponent],
@@ -24,7 +25,12 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
     AppRoutingModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireAuthModule,
-    // FirebaseUIModule.forRoot(firebaseUiAuthConfig),
+    AngularFireDatabaseModule,
+    SecureRoutingModule,
+    IonicStorageModule.forRoot({
+      name: 'gass',
+      driverOrder: ['indexeddb', 'sqlite', 'websql']
+    })
   ],
   providers: [
     StatusBar,
@@ -34,4 +40,4 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

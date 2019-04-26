@@ -2,7 +2,7 @@ export class User {
 
     /**
      * Define los datos del usuario de la aplicación
-     * @param username Usuario
+     * @param uid UID
      * @param name Nombre
      * @param lastname Apellido
      * @param email Correo
@@ -10,7 +10,7 @@ export class User {
      * @param addr Dirección
      */
     constructor(
-        public username: string,
+        public uid: string,
         public name: string,
         public lastname: string,
         public email: string,

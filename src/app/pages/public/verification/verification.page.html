@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-title>Verificación</ion-title>
+        <ion-icon name="md-key" size="large" slot="end"></ion-icon>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding [scrollY]="false">
+    <form #form="ngForm" (ngSubmit)="acept()">
+        <ion-text color="light">Código de verificación enviado al número:</ion-text>
+        <ion-label class="verificationTelfNumber" color="light">{{user.cellphone}}</ion-label>
+        <ion-item>
+            <ion-label fixed><ion-icon name="md-key" color="light"></ion-icon></ion-label>
+            <ion-input required clearInput [(ngModel)]="code" name="code" class="verificationInputCode" placeholder="Código"
+                type="text" color="light"></ion-input>
+        </ion-item>
+        <ion-text color="light">Si no ha recibido ningún mensaje verifique que el número sea correcto o presione:
+        </ion-text>
+        <ion-label class="verificationResendTelfNumber" color="light" (click)="resend()" style="cursor:pointer">Enviar
+            nuevamente...</ion-label>
+        <ion-item lines="none" class="verificationItemButtons">
+            <ion-button type="submit" [disabled]="form.invalid" class="verificationSendButton" slot="start"
+                color="primary">
+                <ion-icon size="large" name="paper-plane"></ion-icon>
+            </ion-button>
+            <ion-button class="verificationCloseButton" slot="end" color="medium" (click)="cancel()">
+                <ion-icon size="large" name="close"></ion-icon>
+            </ion-button>
+        </ion-item>
+    </form>
+</ion-content>
