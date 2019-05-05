@@ -7,10 +7,35 @@ import { IonicModule } from '@ionic/angular';
 
 import { TabsPage } from './tabs.page';
 
+// import { ProfilePage } from '../profile/profile.page';
+// import { TruckPage } from '../truck/truck.page';
+
 const routes: Routes = [
+
   {
     path: '',
-    component: TabsPage
+    redirectTo: 'tabs/profile',
+    pathMatch: 'full'
+  },
+  {
+    path: 'tabs',
+    component: TabsPage,
+    children:
+      [
+        {
+          path: '',
+          redirectTo: 'tabs/profile',
+          pathMatch: 'full'
+        },
+        {
+          path: 'profile',
+          loadChildren: '../pages/secure/profile/profile.module#ProfilePageModule'
+        },
+        {
+          path: 'truck',
+          loadChildren: '../pages/secure/truck/truck.module#TruckPageModule'
+        }
+      ]
   }
 ];
 
@@ -23,4 +48,4 @@ const routes: Routes = [
   ],
   declarations: [TabsPage]
 })
-export class TabsPageModule {}
+export class TabsPageModule { }

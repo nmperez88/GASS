@@ -8,9 +8,9 @@
           </ion-avatar>
           <ion-item lines="none">
             <ion-list>
-              <ion-label class="menuFormatTextUsername" color="light">Item Avatar</ion-label>
-              <ion-label class="menuFormatTextRol" color="light">{{user.name}}</ion-label>
-              <ion-badge slot="end" class="menuBadgeScore" color="dark">4.8</ion-badge>
+              <ion-label class="menuFormatTextUsername" color="light">{{user.name}}</ion-label>
+              <ion-label class="menuFormatTextRol" color="light">{{user.i18n_role}}</ion-label>
+              <ion-badge slot="end" class="menuBadgeScore" color="dark">{{user.clc_score | number:"1.0-1"}}</ion-badge>
             </ion-list>
           </ion-item>
         </ion-toolbar>

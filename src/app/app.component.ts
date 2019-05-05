@@ -17,7 +17,7 @@ import * as firebaseApp from 'firebase/app';
 })
 export class AppComponent {
 
-  user: User = new User('', '', '', '', '', '');
+  user: User = new User('', '', '', '', '', '', '', null);
 
   public appPages = [
     {

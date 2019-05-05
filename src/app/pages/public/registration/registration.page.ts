@@ -18,9 +18,8 @@ declare var grecaptcha: any;
 })
 export class RegistrationPage implements OnInit {
 
-  // user: User = new User('', 'Test', 'Test', 'test@test.tt', '+59899273897', '4495 NW 73rd Ave, Miami, Florida');
-  // user: User = new User('', 'Test', 'Test', 'test@test.tt', '+59895132907', '4495 NW 73rd Ave, Miami, Florida');
-  user: User = new User('', 'Test', 'Test', 'test@test.tt', '+59812345678', '4495 NW 73rd Ave, Miami, Florida');
+  // user: User = new User('', 'Test', 'Test', 'test@test.tt', '+59899273897', '4495 NW 73rd Ave, Miami, Florida', 'client', 0);
+  user: User = new User('', 'Test', 'Test', 'test@test.tt', '+59812345678', '4495 NW 73rd Ave, Miami, Florida', 'client', 0);
 
   password = '';
   confirmPassword = '';

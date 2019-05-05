@@ -32,6 +32,12 @@ Firebaseui(angular):
 		npm i firebaseui-angular --save
         npm install firebase firebaseui @angular/fire firebaseui-angular --save
 
+Generar clase:
+    ionic g class model/service
+    ionic g class model/client
+    ionic g class model/driver
+    ionic g class model/conversations
+    
 Generar servicio:
     ionic g service services/authentication
     ionic g service services/entityManager
